@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Team Activity &gt; Expedia</title>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>BI</li>
+			<li>홈</li>
+			<li>항공</li>
+			<li>호텔</li>
+			<li>특가상품</li>
+			<li>렌트카</li>
+			<li>쿠폰</li>
+		</ul>
+	</div>
+
+	<div>
+		<select name="language">
+			<option value="eng">English</option>
+			<option value="chn">Chinese</option>
+		</select>
+		<select name="cs">
+			<option value="cs">고객센터</option>
+		</select>
+	</div>
+
+	<hr>
+
+	<!-- 본문 -->
+	<h1>  간편한 예약으로 특별한 여행을 시작하세요 </h1>
+
+	<form name="reservation" action="#" method="GET">
+	
+	<fieldset>
+	<legend>간편예약</legend>
+	<ul>
+		<li>
+			<label for="rv-flight">항공편</label>
+				<label><input type="radio" name="rv-flight-a" value="1">왕복</label>
+				<label><input type="radio" name="rv-flight-a" value="2">편도</label>
+		</li>
+
+		<li>
+			<label for="rv-departure">출발</label>
+				<input type="text" name="departure" id="rv-departure" placeholder="도시명 또는 공항명">
+		</li>
+		<li>
+			<label for="rv-arrial">도착</label>
+			<input type="text" name="arrial" id="rv-arrial" placeholder="도시명 또는 공항명">
+		</li>
+
+		<li>
+			<label><input type="checkbox" name="rv-search">직항노선만 검색하기</label>
+		</li>
+		
+		<li>
+			<label>일정<input type="text" name="rv-chedule" placeholder="출국일 - 귀국일"></label>
+		</li>
+	<li>
+		<label>인원
+			<select name="people">
+				<option value="1">성인 1명</option>
+			</select>
+		</label>
+	</li>
+	<li>
+		<p><a href="#">상세조건검색</a></p>
+	</li>
+	<li>
+		<button>항공편 검색</button>
+	</li>
+	</ul>
+	</fieldset>
+</form>
+	
+</body>
+</html>
